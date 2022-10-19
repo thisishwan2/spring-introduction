@@ -24,6 +24,7 @@ public class MemberController {
     public String createForm(){
         return "members/createMemberForm";
     }
+
     @PostMapping("/members/new")//데이터를 폼같은데에 넣어서 전달할때 포스트맵핑
     public String create(MemberForm form){
         Member member = new Member();
