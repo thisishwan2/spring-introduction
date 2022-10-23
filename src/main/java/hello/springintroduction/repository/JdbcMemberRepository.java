@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.Optional;
 
 public class JdbcMemberRepository implements MemberRepository {
-    private final DataSource dataSource;
+    private final DataSource dataSource; //db에 붙을려면 DataSource가 필요함.
 
-    public JdbcMemberRepository(DataSource dataSource) {
+    public JdbcMemberRepository(DataSource dataSource) {//db에 붙을려면 DataSource가 필요함.
         this.dataSource = dataSource;
     }
 

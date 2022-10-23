@@ -14,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest//스프링이 테스트 할때
-@Transactional//데이터베이스는 트랜잭션이라는 개념이 있다. 이 어노테이션을 텟스트에 걸어놓으면 테스트를 실행할때 트랜져ㅐㄱ션을 먼저 실행하고,디비 데이터를 인서트 퀴리하고 테스트 끝나면 롤백함.
+@Transactional//데이터베이스는 트랜잭션이라는 개념이 있다. 이 어노테이션을 테스트에 걸어놓으면 테스트를 실행할때 트랜잭션션을 먼저 실행하고,디비 데이터를 인서트 퀴리하고 테스트 끝나면 롤백함.
 class MemberServiceIntegrationTest {
 
     @Autowired MemberService memberService;
