@@ -1,9 +1,16 @@
 package hello.springintroduction.domain;
 
+import javax.persistence.*;
+
+@Entity //jpa가 관리하는 entity가 된다.
 public class Member {
 
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) //pk는 id이고, db가 알아서 만들어 주는건 Identity라고 한다.
     private Long id;
+
+
     private String name;
+
 
     public Long getId() {
         return id;
